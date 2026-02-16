@@ -1,25 +1,25 @@
-# Changelog
+# 更新日志 (Changelog)
 
 ## [1.0.0] - 2026-02-16
 
-### ✨ New Features
+### ✨ 新增特性
 
-- **Form Support**: Added `PrismTextFormField` component for integrated Flutter Form validation and state management.
-- **Component Feedback Optimization**:
-  - `PrismTabs`: Implemented sophisticated interaction feedback (hover, scale, press effects) and refined active state animations.
-  - `PrismSwitch`, `PrismCheckbox`, `PrismRadio`: Enhanced visual feedback with InkWell ripples and scale animations.
-  - `PrismSplitView`: Added hover and active state feedback for the drag handle.
-- **Dropdown Enhancements**: Added `builder` pattern support to `PrismDropdown` to allow custom trigger widgets and manual menu control.
+- **表单支持**：新增 `PrismTextFormField` 组件，集成 Flutter Form 表单验证和状态管理功能。
+- **组件反馈优化**：
+  - `PrismTabs`：实现了精致的交互反馈（悬停、缩放、点击效果），并优化了选中状态动画。
+  - `PrismSwitch`、`PrismCheckbox`、`PrismRadio`：增强了视觉反馈，添加了水波纹（InkWell）和缩放动画。
+  - `PrismSplitView`：为拖拽手柄添加了悬停和激活状态的反馈。
+- **下拉菜单增强**：`PrismDropdown` 新增 `builder` 模式支持，允许自定义触发组件和手动控制菜单开关。
 
-### 🐛 Bug Fixes
+### 🐛 问题修复
 
-- **PrismDropdown**: Fixed an issue where the dropdown would not open when using interactive children (like `PrismButton`) by resolving gesture conflicts.
-- **PrismTextField**: Fixed a layout issue where validation error messages would cause height overflow or overlap; implemented custom error text rendering below the input field.
-- **PrismTabs**: Fixed a dual-shadow bug where both previous and current tabs would show shadows during transition.
-- **PrismTimeline**: Fixed type mismatch errors (DateTime vs String) in example usage.
-- **Example Project**: Fixed compilation and testing errors in the `example` app to ensure smooth demonstration.
+- **PrismDropdown**：修复了在使用交互式子组件（如 `PrismButton`）时，因手势冲突导致下拉菜单无法打开的问题。
+- **PrismTextField**：修复了表单验证错误信息导致的高度溢出或重叠布局问题；实现了错误信息在输入框下方独立渲染的优化。
+- **PrismTabs**：修复了切换标签时，前一个和当前标签同时显示阴影的双重阴影 Bug。
+- **PrismTimeline**：修复了示例代码中的类型不匹配错误（DateTime 与 String）。
+- **示例项目**：修复了 `example` 应用中的编译和测试错误，确保演示流程顺畅。
 
-### 🚀 Initial Release
+### 🚀 首次发布
 
-- Released the core library containing 50+ UI components across Layout, Inputs, Data Display, Feedback, Navigation, and Media categories.
-- Comprehensive example project demonstrating usage of all components.
+- 发布核心库，包含布局、输入、数据展示、反馈、导航和媒体等类别的 50+ 个 UI 组件。
+- 提供包含所有组件用法的完整示例项目。
